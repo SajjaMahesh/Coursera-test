@@ -1,10 +1,43 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Hello Coursera</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <style>
+    body {
+      font-size: 1.3em;
+    }
+    </style>
+    <title>Angular Js Demo</title>
   </head>
   <body>
-    <h1>Hello Coursera!!! This is Mahesh!!!</h1>
+    <!-- <div  ng-app="myFirstApp">
+<h1>Name Caluculator</h1>
+<div ng-controller="nameCaluculatorController">
+  Your Name:
+  <input type="text" ng-model="name" ng-keyup = "displayNumeric();">
+  <div>
+    Total numeric values of person's name is : {{totalValue}}
+  </div>
+</div>
+</div> -->
+
+<div ng-app="DIApp">
+  <h1>Dependeny injection in javascript (and Angular JS)</h1>
+  <div ng-controller="DIController">
+    <input type="text" ng-model="DIName" ng-blur="upper();">
+  </div>
+</div>
+<div ng-app="msgApp">
+<div ng-controller="MsgController">
+  {{name}} has something for you : <br>
+  {{sayMessage()}}
+  <div>
+    <button ng-click="feedMahesh()">Feed Mahesh</button><br>
+    <img ng-src="images/mahesh_{{state}}.png">
+  </div>
+</div>
+</div>
   </body>
 </html>
