@@ -1,0 +1,10 @@
+Creating custom filters
+---------------------------------
+
+1. Create factory function
+
+2. Register factory with module
+
+3. Inject with nameFilter
+
+
